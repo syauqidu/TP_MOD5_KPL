@@ -6,10 +6,10 @@ class HelloGeneric
     {
         Console.WriteLine("Hello user " +  Tinput);
     }
-    public static void Main(string[] args)
+/*    public static void Main(string[] args)
     {
         Console.Write("Masukkan Nama: ");
         String nama = Console.ReadLine();
         sapaUser(nama);
-    }
+    }*/
 }
