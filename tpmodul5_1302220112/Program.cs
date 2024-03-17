@@ -1,5 +1,4 @@
 ﻿using System;
-namespace tpmodul5_1302220112;
 public class DataGeneric<T>
 {
     public T Data { get; set; }
@@ -12,5 +11,15 @@ public class DataGeneric<T>
     {
         Console.WriteLine("Data yang tersimpan adalah: " +  Data);
     }
-
+    
+}
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Masukkan NIM: ");
+        string nim = Console.ReadLine();
+        DataGeneric<string> data = new DataGeneric<string>(nim);
+        data.printData();
+    }
 }
